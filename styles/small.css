@@ -1,0 +1,113 @@
+:root {
+    --first-color: #618B25;
+    --second-color: #42113C;
+    --third-color: #00c8f5;
+    --fourth-color: #a7bb85;
+    --fifth-color: #e8f6d0;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--second-color);
+    color: white;
+}
+
+#aboveNav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: space-around;
+    justify-content: center;
+    /* align-items: center;
+    align-content: center; */
+
+}
+
+#selfPortrait, #myName {
+    justify-self: center;
+    align-self: center; 
+}
+
+#menu {
+    border: 0;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    font-size: 2.5rem;
+    background-color: var(--second-color);
+    color: var(--fourth-color);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation a {
+    display: none;
+}
+
+.navigation.open a {
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--fourth-color);
+}
+
+nav {
+    background-color: var(--first-color);
+    /* display: block; */
+}
+
+nav ul {
+    list-style-type: none;
+    /* justify-content: space-around; */
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5rem;
+}
+
+.pageTitle {
+    margin: 1rem;
+}
+
+.tile {
+    margin: 1rem;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px;
+}
+
+.title {
+    background-color: var(--second-color);
+    color: white;
+    padding: .5rem;
+    text-align: center;
+
+}
+
+.tileContent {
+    padding: 1rem;
+}
+
+footer {
+    
+    background-color: var(--second-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}

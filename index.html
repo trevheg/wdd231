@@ -9,14 +9,25 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="" alt="Picture of me">
-        <h1>Trevor G. Hegstrom</h1>
+        <div id="aboveNav">
+            <div id="selfPortrait">
+               <img src="images/profile-picture.jpg" alt="Picture of me">
+            </div>
+            <div id="myName">
+                <h1>Trevor G. Hegstrom</h1>
+            </div>
+        </div>
+        <button id="menu" aria-label="menu"></button>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Chamber</a></li>
                 <li><a href="#">Final</a></li>
@@ -26,7 +37,45 @@
         </nav>
     </header>
     <main>
-
+        <div id="mainContent">
+            <div class="pageTitle">
+                <h2>Home</h2>
+            </div>
+            <div id="tiles">
+                <section id="courseWork" class="tile">
+                    <div class="title">
+                        <h3>Course Work</h3>
+                    </div>
+                    <div class="tileContent">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="cityInfo" class="tile">
+                    <div class="title">
+                        <h3>San Jose, CA</h3>
+                    </div>
+                    <div class="tileContent">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui dicta veritatis! Optio fugiat placeat, numquam culpa laboriosam explicabo soluta iure id voluptatibus facilis, quis est. Neque perspiciatis laboriosam laborum.</p>
+                    </div>
+                </section>
+                <section id="certificate" class="tile">
+                    <div class="title">
+                        <h3>Web and Computer Programming Certificate</h3>
+                    </div>
+                    <div class="tileContent">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro quidem omnis, aliquid repellat nihil atque numquam eius recusandae quasi quae incidunt fugit dignissimos possimus unde distinctio. Iste, consectetur reiciendis!</p>
+                        <div id="classTypes">
+                            
+                        </div>
+                        <div id="classes"></div>
+                    </div>
+                </section>                
+            </div>
+        </div>
     </main>
     <footer>
         <p>&#169; <span id="currentYear"></span> Trevor Hegstrom, USA</p>
