@@ -22,9 +22,7 @@ header {
     grid-template-columns: 1fr 2fr;
     justify-content: space-around;
     justify-content: center;
-    /* align-items: center;
-    align-content: center; */
-
+    font-size: 2rem;
 }
 
 #selfPortrait, #myName {
@@ -64,13 +62,12 @@ nav a:hover {
 
 nav {
     background-color: var(--first-color);
-    /* display: block; */
 }
 
 nav ul {
     list-style-type: none;
-    /* justify-content: space-around; */
     margin: 0;
+    padding-inline-start: 0;
 }
 
 nav a {
@@ -102,6 +99,18 @@ nav a {
 
 .tileContent {
     padding: 1rem;
+    /* width: 100%; */
+}
+
+#quetzalcoatl img{
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+figcaption {
+    text-align: center;
 }
 
 footer {

@@ -16,7 +16,7 @@ const today = new Date();
 currentYear.innerHTML = today.getFullYear();
 
 // put the last modified date in the page
-// lastModified.innerHTML = (Date(document.lastModified));
-lastModified.innerHTML = new Date(document.lastModified).toLocaleDateString("en-US", myDateOptions); // This one gives a simplified date
+lastModified.innerHTML = (Date(document.lastModified));
+// lastModified.innerHTML = new Date(document.lastModified).toLocaleDateString("en-US", myDateOptions); // This one gives a simplified date
 
 
