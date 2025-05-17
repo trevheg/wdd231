@@ -86,7 +86,8 @@ nav a {
     margin: 1rem;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 3px 3px 10px;
+    /* box-shadow: 3px 3px 10px; */
+    border: solid 1px var(--second-color)
 }
 
 .title {
@@ -126,11 +127,7 @@ figcaption {
     margin: .1rem;
 }
 
-/* #classCards {
-    display: block;
-} */
-
-.class {
+.course {
     color: white;
     text-align: center;
     padding: .5rem;
@@ -145,6 +142,14 @@ figcaption {
 
 .notCompleted {
     background-color: var(--fourth-color);
+}
+
+.course.hidden{
+    display: none;
+}
+
+#certificate {
+    text-align: center;
 }
 
 footer {

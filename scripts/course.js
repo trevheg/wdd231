@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -80,10 +80,11 @@ const courses = [
 
 const classCards = document.querySelector("#classCards");
 // autopopulate #classCards with a card for each class
-courses.forEach(course => {
-    
+populateClasses = (classArray) => {
+    classCards.innerHTML = '';
+    classArray.forEach(course => {    
     const newCourse = document.createElement("div");
-    newCourse.classList.add("class");
+    newCourse.classList.add("course");
     newCourse.classList.add(course.subject);
     if (course.completed) {
         newCourse.classList.add("completed");
@@ -92,4 +93,26 @@ courses.forEach(course => {
     }
     newCourse.innerHTML = `${course.subject} ${course.number}`
     classCards.appendChild(newCourse);
+    })
+    // Provide a total number of credits required dynamically by using a reduce function (not shown on the screenshots). The number of credits shown should reflect just the courses currently being displayed.
+    const requiredCredits = document.querySelector("#requiredCredits");
+    requiredCredits.textContent = classArray.reduce((credits, course) => credits + course.credits, 0)
+}
+populateClasses(courses);
+
+// Using buttons that listen for the click event, allow the user to select to display All Courses, WDD Courses, or CSE Courses.
+const allClasses = document.querySelector("#allClasses");
+const cseClasses = document.querySelector("#cseClasses");
+const wddClasses = document.querySelector("#wddClasses");
+
+allClasses.addEventListener("click", () => {
+    populateClasses(courses);
 })
+cseClasses.addEventListener("click", () => {
+    populateClasses(courses.filter(course => course.subject == "CSE"));
+})
+wddClasses.addEventListener("click", () => {
+    populateClasses(courses.filter(course => course.subject == "WDD"));
+})
+
+
