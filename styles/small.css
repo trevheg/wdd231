@@ -28,6 +28,7 @@ header {
 #selfPortrait, #myName {
     justify-self: center;
     align-self: center; 
+    margin: 1rem;
 }
 
 #selfPortrait img {
