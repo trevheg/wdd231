@@ -22,12 +22,16 @@ header {
     grid-template-columns: 1fr 2fr;
     justify-content: space-around;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #selfPortrait, #myName {
     justify-self: center;
     align-self: center; 
+}
+
+#selfPortrait img {
+    width: 50px;
 }
 
 #menu {
