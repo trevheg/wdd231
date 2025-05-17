@@ -113,6 +113,40 @@ figcaption {
     text-align: center;
 }
 
+#classTypes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.classType {
+    background-color: var(--fifth-color);
+    /* color: var(white); */
+    padding: .5rem;
+    border-radius: .5rem;
+    margin: .1rem;
+}
+
+/* #classCards {
+    display: block;
+} */
+
+.class {
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    margin: .5rem;
+    border: solid var(--second-color) 1px;
+    border-radius: .5rem;
+}
+
+.completed {
+    background-color: var(--first-color);
+}
+
+.notCompleted {
+    background-color: var(--fourth-color);
+}
+
 footer {
     
     background-color: var(--second-color);
