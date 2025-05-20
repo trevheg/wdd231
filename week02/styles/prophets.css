@@ -1,0 +1,20 @@
+section {
+    border: solid 1px blue;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: .5rem;
+    background-color: lightblue;
+    text-align: center;
+    height: auto;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+img {
+    /* margin: 1rem; */
+    object-fit: contain;
+    max-width: 100%;
+}
