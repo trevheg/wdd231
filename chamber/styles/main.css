@@ -115,6 +115,11 @@ nav.open {
     background-color: var(--four);
 }
 
+#main-h1 {
+    padding: 1rem;
+    margin-top: 0;
+}
+
 #below-hero {
     margin: 1rem;
 }
