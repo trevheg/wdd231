@@ -1,5 +1,60 @@
 {
     "members": [
-        
+        {
+            "name": "Fallothistle Flowers",
+            "address": "4 Landlubber Way",
+            "phonenumber": "555-555-1234",
+            "url": "https://www.fallothistleflowers.com",
+            "imagename": "fallothistle.svg",
+            "membershiplevel": 2
+        },
+        {
+            "name": "Newstick Pets",
+            "address": "36 Poop Deck Street",
+            "phonenumber": "555-555-2345",
+            "url": "https://www.newstickpets.com",
+            "imagename": "newstick.svg",
+            "membershiplevel": "1"
+        },
+        {
+            "name": "Underbough's Magic Items",
+            "address": "34 Quartermaster Lane",
+            "phonenumber": "555-555-3456",
+            "url": "https://www.underboughmi.com",
+            "imagename": "underbough.svg",
+            "membershiplevel": "3"
+        },
+        {
+            "name": "Mudsack General Store",
+            "address": "73 Taffrail Drive",
+            "phonenumber": "555-555-4576",
+            "url": "https://www.mudsackgs.com",
+            "imagename": "mudsack.svg",
+            "membershiplevel": "2"
+        },
+        {
+            "name": "Sproutroot Auctions",
+            "address": "38 Scurvy Way",
+            "phonenumber": "555-555-5678",
+            "url": "https://www.sproutrootah.com",
+            "imagename": "sproutroot.svg",
+            "membershiplevel": "3"
+        },
+        {
+            "name": "Darnsfoot Arena",
+            "address": "27 Fair Wind Alley",
+            "phonenumber": "555-555-6789",
+            "url": "https://www.darnsfootarena.com",
+            "imagename": "darnsfoot.svg",
+            "membershiplevel": "1"
+        },
+        {
+            "name": "Caliope Music Hall",
+            "address": "39 Gangway Way",
+            "phonenumber": "555-555-7890",
+            "url": "http://www.caliopemusichallrightleg.com",
+            "imagename": "caliope.svg",
+            "membershiplevel": "3"
+        }
     ]
 }
