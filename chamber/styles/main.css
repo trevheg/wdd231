@@ -119,13 +119,13 @@ nav.open {
     margin: 1rem;
 }
 
-.tile {
+.tile, .member-card {
     margin-top: .5rem;
     margin-bottom: .5rem;
     background-color: var(--three);
 }
 
-.tile h3 {
+.tile h3, .member-card h3 {
     background-color: var(--one);
     color: var(--three);
     text-align: center;
@@ -172,6 +172,34 @@ footer {
 
     margin: 1rem;
     justify-self: center;
+}
+
+/* Directory Cards */
+.member-card {
+    margin: 1rem;
+    height: auto;
+
+}
+
+.member-card-content {
+    padding: 1rem;
+    display: grid;
+}
+
+.member-card img {
+    object-fit: contain;
+    max-height: 50px;
+    justify-self: center;
+    margin-bottom: .5rem;
+}
+
+#directory-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.member-card p {
+    font-size: small;
 }
 
 @media screen and (min-width: 320px) {
