@@ -21,6 +21,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     
 </head>
 <body>
@@ -55,7 +56,7 @@
         <div id="main-div">
             <div id="hero-div">
                 <img src="images/essaouira.webp" alt="" id="hero-image">
-                <button id="keynote-tickets">Keynote Tickets</button>
+                <button id="call-to-action">Reserve an auction seat today!</button>
             </div>
             <div id="below-hero">
                 <h2>Home</h2>
@@ -63,15 +64,24 @@
                     <section id="events" class="tile">
                         <h3>Events</h3>
                         <div class="tile-content">
-                            
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus culpa doloremque repudiandae, quae itaque alias, sequi, illo odio excepturi voluptatem accusamus adipisci est dignissimos optio cupiditate velit officiis laudantium ab.</p>                            
+                            <ul>
+                                <li>
+                                    Isle de Rana auction week is coming!
+                                </li>
+                                <li>
+                                    Workers needed for auction week
+                                </li>
+                                <li>
+                                    Are you registered to vote?
+                                </li>
+                            </ul>                            
                         </div>
 
                     </section>
                     <section id="current-weather" class="tile">
                         <h3>Current Weather</h3>
                         <div class="tile-content">
-                            <img src="images/partly-cloudy.svg" alt="" id="weatherImg">
+                            <img src="" alt="" id="weather-icon">
                             <div id="weather-stats">
                                 <ul>
                                     <li>75&#176; F</li>
@@ -103,43 +113,43 @@
                 <div id="businesses">
                     <section class="business">
                         <div class="business-header">
-                            <h4>Business Name</h4>
-                            <p>Business Tag Line</p>
+                            <h4>Newstick Pets</h4>
                         </div>
                         <div class="business-content">
-                            <div class="business-logo"></div>
+                            <img src="images/newstick.svg" alt="Newstick">
+                            <p>Pets are the best</p>
                             <div class="business-contact">
-                                <p><strong>EMAIL: </strong>info@gmail.com</p>
+                                <p><strong>EMAIL: </strong>info@newstickpets.com</p>
                                 <p><strong>PHONE: </strong>800-555-1234</p>
-                                <p><strong>URL: </strong>mybusiness.com</p>
+                                <p><strong>URL: </strong>https://www.newstickpets.com</p>
                             </div>
                         </div>
                     </section>
                     <section class="business">
                         <div class="business-header">
-                            <h4>Business Name</h4>
-                            <p>Business Tag Line</p>
+                            <h4>Fallothistle Flowers</h4>
                         </div>
                         <div class="business-content">
-                            <div class="business-logo"></div>
+                            <img src="images/fallothistle.svg" alt="Fallothistle">
+                            <p>For all your floral needs</p>
                             <div class="business-contact">
-                                <p><strong>EMAIL: </strong>info@gmail.com</p>
+                                <p><strong>EMAIL: </strong>info@fallothistleflowers.com</p>
                                 <p><strong>PHONE: </strong>800-555-1234</p>
-                                <p><strong>URL: </strong>mybusiness.com</p>
+                                <p><strong>URL: </strong>https://www.fallothistleflowers.com</p>
                             </div>
                         </div>
                     </section>
                     <section class="business">
                         <div class="business-header">
-                            <h4>Business Name</h4>
-                            <p>Business Tag Line</p>
+                            <h4>Underbough's Magic Items</h4>
                         </div>
                         <div class="business-content">
-                            <div class="business-logo"></div>
+                            <img src="images/underbough.svg" alt="Underbough">
+                            <p>Magic your life</p>
                             <div class="business-contact">
-                                <p><strong>EMAIL: </strong>info@gmail.com</p>
+                                <p><strong>EMAIL: </strong>info@underboughmi.com</p>
                                 <p><strong>PHONE: </strong>800-555-1234</p>
-                                <p><strong>URL: </strong>mybusiness.com</p>
+                                <p><strong>URL: </strong>https://www.underboughmi.com</p>
                             </div>
                         </div>
                     </section>
@@ -160,11 +170,15 @@
                 <p>info@rightlegislederana.com</p>
                 <p>(123) 555-1234</p>
             </div>
-            <div id="socials-links"></div>
+            <div id="socials-links">
+                <img src="images/facebook.svg" alt="Facebook Logo" class="social">
+                <img src="images/instagram.svg" alt="Instagram Logo" class="social">
+                <img src="images/twitter.svg" alt="Twitter Logo" class="social">
+            </div>
             <div id="project-info">
                 <p>WDD231 Class Project</p>
                 <p>Trevor Hegstrom</p>
-                <p>&copy <span id="current-year"></span> Right Leg Chamber of Commerce</p>
+                <p>&copy; <span id="current-year"></span> Right Leg Chamber of Commerce</p>
                 <p>Last Modification: <span id="last-modified"></span></p>
             </div>
         </div>

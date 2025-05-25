@@ -98,7 +98,7 @@ nav.open {
     width: 100%;
 }
 
-#keynote-tickets {
+#call-to-action {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -124,21 +124,32 @@ nav.open {
     margin: 1rem;
 }
 
-.tile, .member-card {
+.tile, .business, .member-card {
     margin-top: .5rem;
     margin-bottom: .5rem;
     background-color: var(--three);
 }
 
-.tile h3, .member-card h3 {
+.tile h3, .business h4, .member-card h3 {
     background-color: var(--one);
     color: var(--three);
     text-align: center;
     padding: .2rem;    
 }
 
-.tile-content {
+.tile-content, .business-content {
     padding: 1rem;
+}
+
+.business-content {
+    display: grid;
+    justify-items: center;
+}
+
+.business-content img {
+    width: 100px;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .tile p {
@@ -249,7 +260,7 @@ footer {
 
     #footer-div {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         
     }
 
