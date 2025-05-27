@@ -121,34 +121,24 @@ nav.open {
 }
 
 #below-hero {
-    margin: 1rem;
+    padding: 1rem;
 }
 
-.tile, .business, .member-card {
+.tile, .member-card {
     margin-top: .5rem;
     margin-bottom: .5rem;
     background-color: var(--three);
 }
 
-.tile h3, .business h4, .member-card h3 {
+.tile h3, .member-card h3 {
     background-color: var(--one);
     color: var(--three);
     text-align: center;
     padding: .2rem;    
 }
 
-.tile-content, .business-content {
+.tile-content, .member-card-content {
     padding: 1rem;
-}
-
-.business-content {
-    display: grid;
-    justify-items: center;
-}
-
-.business-content img {
-    width: 100px;
-    max-width: 100%;
     object-fit: contain;
 }
 
@@ -166,6 +156,20 @@ nav.open {
 
 .tile-content ul {
     list-style-type: none;
+}
+
+#events-and-weather {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+#events li {
+    border: solid 1px var(--five);
+    padding: .2rem;
+    border-radius: 4px;
+    margin: 1px;
+    width: 100%;
 }
 
 footer {
@@ -209,7 +213,7 @@ footer {
     margin-bottom: .5rem;
 }
 
-#directory-cards {
+#directory-cards, #spotlight {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }

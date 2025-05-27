@@ -14,7 +14,7 @@
             "phonenumber": "555-555-2345",
             "url": "https://www.newstickpets.com",
             "imagename": "newstick.svg",
-            "membershiplevel": "1"
+            "membershiplevel": 1
         },
         {
             "name": "Underbough's Magic Items",
@@ -22,7 +22,7 @@
             "phonenumber": "555-555-3456",
             "url": "https://www.underboughmi.com",
             "imagename": "underbough.svg",
-            "membershiplevel": "3"
+            "membershiplevel": 3
         },
         {
             "name": "Mudsack General Store",
@@ -30,7 +30,7 @@
             "phonenumber": "555-555-4576",
             "url": "https://www.mudsackgs.com",
             "imagename": "mudsack.svg",
-            "membershiplevel": "2"
+            "membershiplevel": 2
         },
         {
             "name": "Sproutroot Auctions",
@@ -38,7 +38,7 @@
             "phonenumber": "555-555-5678",
             "url": "https://www.sproutrootah.com",
             "imagename": "sproutroot.svg",
-            "membershiplevel": "3"
+            "membershiplevel": 3
         },
         {
             "name": "Darnsfoot Arena",
@@ -46,7 +46,7 @@
             "phonenumber": "555-555-6789",
             "url": "https://www.darnsfootarena.com",
             "imagename": "darnsfoot.svg",
-            "membershiplevel": "1"
+            "membershiplevel": 1
         },
         {
             "name": "Caliope Music Hall",
@@ -54,7 +54,7 @@
             "phonenumber": "555-555-7890",
             "url": "http://www.caliopemusichallrightleg.com",
             "imagename": "caliope.svg",
-            "membershiplevel": "3"
+            "membershiplevel": 3
         }
     ]
 }
