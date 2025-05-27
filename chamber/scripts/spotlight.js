@@ -16,7 +16,7 @@ async function fetchMembers() {
     // pick three random members to display
     while (silverGold.length > 3) {
         index = Math.floor(Math.random() * silverGold.length);
-        console.log(index);
+        // console.log(index);
         silverGold.splice(index, 1);
     }
 
