@@ -28,6 +28,6 @@ displayItems(temples);
 
 function showInfo(item) {
     templeTitle.innerHTML = item.name;
-    templeDetails.innerHTML = `The ${item.name} was dedicated on ${item.dedicated} by ${item.person} as temple #${item.number}.`;
+    templeDetails.innerHTML = `The ${item.name} was dedicated in ${item.dedicated} by ${item.person} as temple #${item.number}.`;
     mydialog.showModal();
 }
