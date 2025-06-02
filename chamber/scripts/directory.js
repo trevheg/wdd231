@@ -5,7 +5,7 @@ async function fetchMembers() {
     
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.members);
+    // console.log(data.members);
     displayMembers(data.members);
 }
 
