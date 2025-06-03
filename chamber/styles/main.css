@@ -194,7 +194,7 @@ footer {
     justify-self: center;
 }
 
-/* Directory Cards */
+/* Directory Specific */
 .member-card {
     margin: 1rem;
     height: auto;
@@ -220,6 +220,16 @@ footer {
 
 .member-card p {
     font-size: small;
+}
+
+/* Join Specific*/
+form {
+    display: grid;
+    grid-template-columns: 300px;
+    margin-left: 1rem;
+}
+label, fieldset {
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 320px) {

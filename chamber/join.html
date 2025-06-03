@@ -56,7 +56,31 @@
     <main>
         <form action="thankyou.html" method="get">
             <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+            <input type="text" id="firstName" name="firstName" title="Input your first name" required autocomplete="given-name">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" title="Input your last name" required autocomplete="family-name">
+            <label for="organizationalTitle">Organizational Title:</label>
+            <input type="text" id="organizationalTitle" name="organizationalTitle" title="Input your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+            <label for="email">Email:</label>
+            <input type="email" required name="email" title="Input your email address" autocomplete="email" placeholder="captain@bigpirateship.com">
+            <label for="mobilePhone">Mobile Phone:</label>
+            <input type="tel" required name="mobilePhone" id="mobilePhone" autocomplete="tel" inputmode="numeric">
+            <label for="orgName">Business/Organization Name:</label>
+            <input type="text" required name="orgName" id="orgName" title="organization">
+            <fieldset>
+                <legend>Membership Level</legend>
+                <input type="radio" name="membership" id="nonProfit" value="nonProfit">
+                <label for="nonProfit">Non Profit</label>
+                <input type="radio" name="membership" id="bronze" value="bronze">
+                <label for="bronze">Bronze</label>
+                <input type="radio" name="membership" id="silver" value="silver">
+                <label for="silver">Silver</label>
+                <input type="radio" name="membership" id="gold" value="gold">
+                <label for="gold">Gold</label>
+            </fieldset>
+            <label for="description">Organization Description</label>
+            <textarea name="description" id="description" title="Describe your organization here" placeholder="A description of your organization" rows="3" cols="25"></textarea>
+            <input type="submit" id="joinChamber" value="Join the Chamber">
         </form>
     </main>
     <footer>
