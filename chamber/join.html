@@ -54,6 +54,7 @@
         </div>
     </header>
     <main>
+        <h1>Join the Chamber of Commerce</h1>
         <form action="thankyou.html" method="get">
             <label for="firstName">First Name:</label>
             <input type="text" id="firstName" name="firstName" title="Input your first name" required autocomplete="given-name">
@@ -70,7 +71,7 @@
             <fieldset>
                 <legend>Membership Level</legend>
                 <input type="radio" name="membership" id="nonProfit" value="nonProfit">
-                <label for="nonProfit">Non Profit</label>
+                <label for="nonProfit">Non-Profit</label>
                 <input type="radio" name="membership" id="bronze" value="bronze">
                 <label for="bronze">Bronze</label>
                 <input type="radio" name="membership" id="silver" value="silver">
@@ -82,6 +83,30 @@
             <textarea name="description" id="description" title="Describe your organization here" placeholder="A description of your organization" rows="3" cols="25"></textarea>
             <input type="submit" id="joinChamber" value="Join the Chamber">
         </form>
+        <div id="membership-levels">
+            <section id="goldTile" class="tile">
+                <h3>Gold Membership</h3>
+                <div class="tile-content">
+                    
+                </div>
+
+            </section>
+            <section id="silverTile" class="tile">
+                <h3>Silver Membership</h3>
+                <div class="tile-content"></div>
+
+            </section>
+            <section id="bronzeTile" class="tile">
+                <h3>Bronze Membership</h3>
+                <div class="tile-content"></div>
+
+            </section>
+            <section id="npTile" class="tile">
+                <h3>Non-profit Membership</h3>
+                <div class="tile-content"></div>
+
+            </section>
+        </div>
     </main>
     <footer>
         <div id="footer-div">

@@ -213,7 +213,7 @@ footer {
     margin-bottom: .5rem;
 }
 
-#directory-cards, #spotlight {
+#directory-cards, #spotlight #membership-levels {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -227,9 +227,35 @@ form {
     display: grid;
     grid-template-columns: 300px;
     margin-left: 1rem;
+    justify-content: center;
 }
+
+fieldset {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+fieldset input {
+    width: 1.5rem;
+}
+
+fieldset label {
+    margin: .5rem;
+}
+
 label, fieldset {
     margin-top: 1rem;
+}
+
+#membership-levels {
+    display: grid;
+    grid-template-columns: 300px;
+    gap: 1rem;
+    justify-content: center;
+}
+
+#membership-levels .tile {
+    margin: 1rem;
 }
 
 @media screen and (min-width: 320px) {
