@@ -23,3 +23,7 @@ membershipButtonNP.addEventListener("click", () => {
 closeButton.addEventListener("click", () => {
     dialogBox.close();
 })
+
+document.querySelector("form").addEventListener("submit", () => {
+    document.querySelector("#timestamp").value = new Date;
+})
