@@ -256,7 +256,50 @@ label, fieldset {
 
 #membership-levels .tile {
     margin: 1rem;
+    border: solid var(--five);
+    border-radius: 5px;
 }
+
+#membershipInfoDialog {
+    background-color: var(--four);
+    align-self: center;
+    justify-self: center;
+    padding: 1rem;
+    justify-items: center;
+    border: solid var(--two);
+}
+
+#form-and-tiles button, input {
+    padding: .5rem;
+    width: 100%;;
+}
+
+#goldTile {    
+    animation-name: tileGlint;
+    animation-duration: 2s;    
+}
+#silverTile {    
+    animation-name: tileGlint;
+    animation-duration: 2s;  
+    animation-delay: 1s; 
+}
+#bronzeTile {    
+    animation-name: tileGlint;
+    animation-duration: 2s;
+    animation-delay: 2s;    
+}
+#npTile {    
+    animation-name: tileGlint;
+    animation-duration: 2s;   
+    animation-delay: 3s; 
+}
+
+
+@keyframes tileGlint {
+    50%{background-color: var(--five);}
+}
+
+
 
 @media screen and (min-width: 320px) {
     #header-div {
@@ -306,5 +349,15 @@ label, fieldset {
 
     #footer-div div {
         justify-self: center;
+    }
+
+
+}
+
+@media screen and (min-width: 620px) {
+    #form-and-tiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1rem;
     }
 }

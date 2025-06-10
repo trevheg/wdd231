@@ -22,7 +22,7 @@
 
     <script src="scripts/date.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <!-- <script src="scripts/directory.js" defer></script> -->
+    <script src="scripts/memberships.js" defer></script>
     
 </head>
 <body>
@@ -37,7 +37,6 @@
                     </div>
                 </div> 
                 <div id="header-buttons">
-                    <!-- <button id="darkmode"></button> -->
                     <button id="menu-button"></button> 
                 </div>                 
             </div>                       
@@ -54,59 +53,77 @@
         </div>
     </header>
     <main>
-        <h1>Join the Chamber of Commerce</h1>
-        <form action="thankyou.html" method="get">
-            <label for="firstName">First Name:</label>
-            <input type="text" id="firstName" name="firstName" title="Input your first name" required autocomplete="given-name">
-            <label for="lastName">Last Name:</label>
-            <input type="text" id="lastName" name="lastName" title="Input your last name" required autocomplete="family-name">
-            <label for="organizationalTitle">Organizational Title:</label>
-            <input type="text" id="organizationalTitle" name="organizationalTitle" title="Input your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
-            <label for="email">Email:</label>
-            <input type="email" required name="email" title="Input your email address" autocomplete="email" placeholder="captain@bigpirateship.com">
-            <label for="mobilePhone">Mobile Phone:</label>
-            <input type="tel" required name="mobilePhone" id="mobilePhone" autocomplete="tel" inputmode="numeric">
-            <label for="orgName">Business/Organization Name:</label>
-            <input type="text" required name="orgName" id="orgName" title="organization">
-            <fieldset>
-                <legend>Membership Level</legend>
-                <input type="radio" name="membership" id="nonProfit" value="nonProfit">
-                <label for="nonProfit">Non-Profit</label>
-                <input type="radio" name="membership" id="bronze" value="bronze">
-                <label for="bronze">Bronze</label>
-                <input type="radio" name="membership" id="silver" value="silver">
-                <label for="silver">Silver</label>
-                <input type="radio" name="membership" id="gold" value="gold">
-                <label for="gold">Gold</label>
-            </fieldset>
-            <label for="description">Organization Description</label>
-            <textarea name="description" id="description" title="Describe your organization here" placeholder="A description of your organization" rows="3" cols="25"></textarea>
-            <input type="submit" id="joinChamber" value="Join the Chamber">
-        </form>
-        <div id="membership-levels">
-            <section id="goldTile" class="tile">
-                <h3>Gold Membership</h3>
-                <div class="tile-content">
-                    
-                </div>
+        <div id="main-div">
+            <h1 id="main-h1">Join the Chamber of Commerce</h1>
+            <div id="form-and-tiles">
+                <form action="thankyou.html" method="get">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" title="Input your first name" required autocomplete="given-name">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" title="Input your last name" required autocomplete="family-name">
+                    <label for="organizationalTitle">Organizational Title:</label>
+                    <input type="text" id="organizationalTitle" name="organizationalTitle" title="Input your organizational title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required name="email" title="Input your email address" autocomplete="email" placeholder="captain@bigpirateship.com">
+                    <label for="mobilePhone">Mobile Phone:</label>
+                    <input type="tel" required name="mobilePhone" id="mobilePhone" autocomplete="tel" inputmode="numeric">
+                    <label for="orgName">Business/Organization Name:</label>
+                    <input type="text" required name="orgName" id="orgName" title="organization">
+                    <fieldset>
+                        <legend>Membership Level</legend>
+                        <input type="radio" name="membership" id="nonProfit" value="nonProfit">
+                        <label for="nonProfit">Non-Profit</label>
+                        <input type="radio" name="membership" id="bronze" value="bronze">
+                        <label for="bronze">Bronze</label>
+                        <input type="radio" name="membership" id="silver" value="silver">
+                        <label for="silver">Silver</label>
+                        <input type="radio" name="membership" id="gold" value="gold">
+                        <label for="gold">Gold</label>
+                    </fieldset>
+                    <label for="description">Organization Description</label>
+                    <textarea name="description" id="description" title="Describe your organization here" placeholder="A description of your organization" rows="3" cols="25"></textarea>
+                    <input type="submit" id="joinChamber" value="Join the Chamber">
+                </form>
+                <div id="membership-levels">
+                    <section id="goldTile" class="tile">
+                        <h3>Gold Membership</h3>
+                        <div class="tile-content">
+                            <button id="membershipButtonGold">Learn More!</button>
+                        </div>
 
-            </section>
-            <section id="silverTile" class="tile">
-                <h3>Silver Membership</h3>
-                <div class="tile-content"></div>
+                    </section>
+                    <section id="silverTile" class="tile">
+                        <h3>Silver Membership</h3>
+                        <div class="tile-content">
+                            <button id="membershipButtonSilver">Learn More!</button>
+                        </div>
 
-            </section>
-            <section id="bronzeTile" class="tile">
-                <h3>Bronze Membership</h3>
-                <div class="tile-content"></div>
 
-            </section>
-            <section id="npTile" class="tile">
-                <h3>Non-profit Membership</h3>
-                <div class="tile-content"></div>
+                    </section>
+                    <section id="bronzeTile" class="tile">
+                        <h3>Bronze Membership</h3>
+                        <div class="tile-content">
+                            <button id="membershipButtonBronze">Learn More!</button>
+                        </div>
 
-            </section>
+                    </section>
+                    <section id="npTile" class="tile">
+                        <h3>Non-profit Membership</h3>
+                        <div class="tile-content">
+                            <button id="membershipButtonNP">Learn More!</button>
+                        </div>
+
+                    </section>
+                    <dialog id="membershipInfoDialog">
+                        <div><p>yo</p>
+                        </div>
+                        <button id="membershipInfoCloseButton">Close</button>
+                    </dialog>
+                </div>                  
+            </div>
+          
         </div>
+
     </main>
     <footer>
         <div id="footer-div">
