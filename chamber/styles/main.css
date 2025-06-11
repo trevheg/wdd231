@@ -225,8 +225,8 @@ footer {
 /* Join Specific*/
 form {
     display: grid;
-    grid-template-columns: 300px;
-    margin-left: 1rem;
+    grid-template-columns:  .9fr;
+    /* margin-left: 1rem; */
     justify-content: center;
 }
 
@@ -249,7 +249,7 @@ label, fieldset {
 
 #membership-levels {
     display: grid;
-    grid-template-columns: 300px;
+    grid-template-columns: .9fr;
     gap: 1rem;
     justify-content: center;
 }
