@@ -1,0 +1,52 @@
+{
+    "places":[
+        {
+            "name": "The Docks",
+            "photo": "docs.webp",
+            "address": "By the sea",
+            "description": "The docks are where all the expensive things enter Right Leg"
+        },
+        {
+            "name": "Historic Auction House",
+            "photo": "auction-house.webp",
+            "address": "264 Rich Halfling Street",
+            "description": "This historic landmark is where the really big things are sold during auction week"
+        },
+        {
+            "name": "The Gargoyle House",
+            "photo": "gargoyle-house.webp",
+            "address": "23 Dead Man's Chest",
+            "description": "This is an old spooky house covered with gargoyles."
+        },
+        {
+            "name": "Goblin Town",
+            "photo": "goblin-town.webp",
+            "address": "Gobbo Way",
+            "description": "Where all the goblins live. Full of unique foods."
+        },
+        {
+            "name": "The Opera House",
+            "photo": "opera-house.webp",
+            "address": "5 Snooty Street",
+            "description": "Where all the best shows are performed."
+        },
+        {
+            "name": "Right Leg Temple",
+            "photo": "temple.webp",
+            "address": "2 Snake God Court",
+            "description": "An old step pyramid temple where the Yuan-ti used to sacrifice prisoners. Probably."
+        },
+        {
+            "name": "The Fight Pits",
+            "photo": "fight-pit.webp",
+            "address": "3 Blood Road",
+            "description": "Where the best fights are held. The most popular game on the island is 'Hook the Plank.'"
+        },
+        {
+            "name": "Skullflower Garden",
+            "photo": "skullflower.webp",
+            "address": "5 Garden Street",
+            "description": "A garden of just skullflowers."
+        }
+    ]
+}

@@ -226,7 +226,6 @@ footer {
 form {
     display: grid;
     grid-template-columns:  .9fr;
-    /* margin-left: 1rem; */
     justify-content: center;
 }
 
@@ -354,7 +353,7 @@ label, fieldset {
 
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 640px) {
     #form-and-tiles {
         display: grid;
         grid-template-columns: 1fr 1fr;
