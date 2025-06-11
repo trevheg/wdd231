@@ -43,10 +43,10 @@
             "description": "Where the best fights are held. The most popular game on the island is 'Hook the Plank.'"
         },
         {
-            "name": "Skullflower Garden",
-            "photo": "skullflower.webp",
+            "name": "Crystal Rose Garden",
+            "photo": "crystal-rose.webp",
             "address": "5 Garden Street",
-            "description": "A garden of just skullflowers."
+            "description": "A garden of just crystal roses."
         }
     ]
 }
