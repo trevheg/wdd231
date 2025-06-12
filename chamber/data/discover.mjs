@@ -1,5 +1,5 @@
-{
-    "places":[
+
+export const   places =[
         {
             "name": "The Docks",
             "photo": "docs.webp",
@@ -49,4 +49,3 @@
             "description": "A garden of just crystal roses."
         }
     ]
-}
