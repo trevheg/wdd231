@@ -6,6 +6,7 @@ const membershipInfo = document.querySelector("#membershipInfoDialog div");
 membershipButtonGold.addEventListener("click", () => {
     dialogBox.showModal();
     membershipInfo.innerHTML = `
+    <p>A Gold Membership costs 10 gp a month</p><br>
     <p>Gold members get:</p>
     <ul>
         <li>A listing in the membership directory</li>
@@ -17,6 +18,8 @@ membershipButtonGold.addEventListener("click", () => {
 membershipButtonSilver.addEventListener("click", () => {
     dialogBox.showModal();
     membershipInfo.innerHTML = `
+    <p>A Silver Membership costs 2 gp a month</p><br>
+
     <p>Silver members get:</p>
     <ul>
         <li>A listing in the membership directory</li>
@@ -27,6 +30,7 @@ membershipButtonSilver.addEventListener("click", () => {
 membershipButtonBronze.addEventListener("click", () => {
     dialogBox.showModal();
     membershipInfo.innerHTML = `
+    <p>A Bronze Membership costs 5 sp a month</p><br>
     <p>Bronze members get:</p>
     <ul>
         <li>A listing in the membership directory</li>
@@ -36,6 +40,7 @@ membershipButtonBronze.addEventListener("click", () => {
 membershipButtonNP.addEventListener("click", () => {
     dialogBox.showModal();
     membershipInfo.innerHTML = `
+    <p>A Non-profit Membership is free for non-profit organizations</p><br>
     <p>Non-profit members get:</p>
     <ul>
         <li>A listing in the membership directory</li>
