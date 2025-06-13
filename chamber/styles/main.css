@@ -360,6 +360,10 @@ label, fieldset {
     grid-area: button;
 }
 
+#visit {
+    margin: 1rem;
+}
+
 @media screen and (min-width: 320px) {
     #items-of-interest section {
         /* display: grid; */
@@ -370,6 +374,10 @@ label, fieldset {
         "button button"
         ;
 
+    }
+    #items-of-interest img:hover{
+        border: solid var(--one) 5px;
+        border-radius: 5px;
     }
 }
 
