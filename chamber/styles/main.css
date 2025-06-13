@@ -301,6 +301,67 @@ label, fieldset {
     50%{background-color: var(--five);}
 }
 
+/* Discover specific */
+#items-of-interest{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+#items-of-interest section {
+    justify-self: center;
+    border: solid 1px var(--five);
+    border-radius: 5px;
+    width: 90%;
+    text-align: center;
+    padding: .5rem;
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: 
+    "title"
+    "picture"
+    "description"
+    "address"
+    "button"
+    ;
+    /* object-fit: contain; */
+}
+
+#items-of-interest h2 {
+    grid-area: title;
+}
+#items-of-interest figure {
+    grid-area: picture;
+}
+#items-of-interest address {
+    grid-area: address;
+}
+#items-of-interest p {
+    grid-area: description;
+}
+
+#items-of-interest figure figcaption {
+    font-size: smaller;
+}
+
+#items-of-interest button {
+    padding: .5rem;
+    grid-area: button;
+}
+
+@media screen and (min-width: 320px) {
+    #items-of-interest section {
+        /* display: grid; */
+        grid-template-areas: 
+        "title ."
+        "picture description"
+        "picture address"
+        "button button"
+        ;
+
+    }
+}
+
 @media screen and (min-width: 640px) {
     #header-div {
         display: grid;
@@ -354,6 +415,12 @@ label, fieldset {
         grid-template-columns: 1fr 1fr;
         padding-bottom: 1rem;
     }
+}
 
-
+@media screen and (min-width: 1025px) {
+    
+    #items-of-interest {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }    
 }
