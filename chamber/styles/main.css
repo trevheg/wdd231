@@ -310,6 +310,7 @@ label, fieldset {
 
 #items-of-interest section {
     justify-self: center;
+    background-color: var(--three);
     border: solid 1px var(--five);
     border-radius: 5px;
     width: 90%;
@@ -324,7 +325,7 @@ label, fieldset {
     "address"
     "button"
     ;
-    /* object-fit: contain; */
+    object-fit: contain;
 }
 
 #items-of-interest h2 {
@@ -332,12 +333,22 @@ label, fieldset {
 }
 #items-of-interest figure {
     grid-area: picture;
+    object-fit: contain;
 }
+
+#items-of-interest img {
+    max-width: 100%;
+}
+
 #items-of-interest address {
     grid-area: address;
 }
 #items-of-interest p {
     grid-area: description;
+}
+
+#items-of-interest address, #items-of-interest p {
+    align-content: center;
 }
 
 #items-of-interest figure figcaption {
