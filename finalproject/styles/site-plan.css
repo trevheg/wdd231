@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --first-color: #940000;
+    --first-color-light: #d6a9a9;
+    --second-color: #005c3f;
+    --second-color-light: #beddd3;
+    --third-color: #671ca1;
+    --third-color-light: #d0b8e2;
+}
+
+body {
+    padding: 1rem;
+}
+
+section {
+    background-color: var(--second-color-light);
+    border: solid var(--second-color);
+    border-radius: 1rem;
+    overflow: hidden;
+    /* padding: 1rem; */
+}
+
+section h2 {
+    background-color: var(--third-color);
+    color: white;
+    padding: .5rem;
+}
+
+section p {
+    padding: .5rem;
+}
