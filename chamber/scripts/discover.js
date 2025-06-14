@@ -23,6 +23,7 @@ const displayItems = (places) => {
         const figure = document.createElement("figure");
         const img = document.createElement("img");
         img.src =  `images/${place.photo}`;
+        img.alt = place.name
         figure.appendChild(img);
         const figcaption = document.createElement("figcaption");
         figcaption.textContent = place.name;
