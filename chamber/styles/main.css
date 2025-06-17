@@ -53,8 +53,6 @@ header {
     content: "X";
 }
 
-
-
 nav {
     background-color: var(--two);
     display: grid;
@@ -62,14 +60,12 @@ nav {
     transition: grid-template-rows 0.5s ease-out;
 }
 
-
-
 nav ul {
     overflow: hidden;
     list-style: none;
 }
 
-.navigation li a {
+nav a {
     text-align: center;
     padding: 1rem;
     display: block;

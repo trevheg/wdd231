@@ -22,8 +22,12 @@ h1 {
     margin: 0;
 }
 
-header {
+header{
     background-color: var(--second-color);
+    color: var(--third-color-light);
+}
+
+header h1 {
     color: white;
 }
 
@@ -34,7 +38,7 @@ header {
 #menu-button {
     border: none;
     background-color: var(--second-color);
-    color: var(--white);
+    color: white;
     font-size: 2.5rem;
     position: absolute;
     right: .5rem;
@@ -60,9 +64,10 @@ nav {
 nav ul {
     overflow: hidden;
     list-style: none;
+    padding: 0;
 }
 
-nav a {
+#nav-list li a {
     text-align: center;
     padding: 1rem;
     display: block;
@@ -71,9 +76,9 @@ nav a {
     color: var(--first-color);
 }
 
-nav a:hover {
+#nav-list a:hover {
     background-color: var(--third-color);
-    color: var(--first-color-light);
+    color: white;
 
 }
 
@@ -82,7 +87,8 @@ nav.open {
 }
 
 .current-page {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    background-color: var(--second-color-light);
 }
 
 main {
@@ -105,11 +111,11 @@ section h2 {
     padding: .5rem;
 }
 
-section h3 {
+section h3, section ul {
     padding: 1rem;
 }
 
-section p, ul {
+section p {
     padding: 1rem;
 }
 
@@ -121,4 +127,21 @@ footer {
     background-color: var(--second-color);
     padding: 1rem;
     color: white;
+}
+
+@media screen and (min-width: 640px) {
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+        #menu-button {
+        display: none;
+    }
 }
