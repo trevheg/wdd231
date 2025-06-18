@@ -105,14 +105,14 @@ section {
     /* padding: 1rem; */
 }
 
-section h2 {
+section h3 {
     background-color: var(--third-color);
     color: white;
     padding: .5rem;
 }
 
 section h3, section ul {
-    padding: 1rem;
+    padding: .5rem;
 }
 
 section p {
@@ -121,6 +121,30 @@ section p {
 
 section li {
     margin: 1rem;
+}
+
+section img {
+    max-width: 100px;
+}
+
+dialog {
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+}
+
+dialog img {
+    max-width: 100%;
+}
+
+button {
+    width: 100%;
+    background-color: var(--third-color);
+    color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: solid 2px var(--second-color);
+
 }
 
 footer {
