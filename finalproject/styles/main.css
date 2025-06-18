@@ -146,6 +146,7 @@ dialog td {
     background-color: var(--third-color);
     color: white;
     padding: .5rem;
+    font-size: larger;
     border-radius: 1rem;
     border: solid 2px var(--second-color);
 
@@ -175,6 +176,6 @@ footer {
 
     #spells {
         display: grid; 
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 }

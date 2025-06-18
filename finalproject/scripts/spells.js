@@ -21,6 +21,7 @@ fetchData(spellsUrl)
 
                 fetchData(mainUrl + spell.url)
                     .then(spell => {
+                        dialog.innerHTML = '';
                         const table  = document.createElement("table");
  
                         const addRow = (q, a) => {
