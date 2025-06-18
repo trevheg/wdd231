@@ -3,38 +3,21 @@ const dndApiUrl = "https://www.dnd5eapi.co/api/2014/";
 const monstersUrl = "https://www.dnd5eapi.co/api/2014/monsters";
 const mainUrl = "https://www.dnd5eapi.co";
 
+import {fetchData} from "./modules.mjs";
 
-async function fetchData(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error("Could not fetch resource");
-        } 
-        data =  await response.json();
-        return data;
-    }
-    catch (error) {
-        console.error(error);
-    }
-}
-
-// don't call the api for each monster. Instead, auto-generate a list of monsters and make a dialog that calls the monster's individual api when clicked
 
 fetchData(monstersUrl)
     .then(data => {
         console.log(data.results)
         data.results.forEach(monster => {
 
-            // const section = document.createElement("section");
-
-            // const name = document.createElement('h3');
-            // name.textContent = monster.name;
-            // section.appendChild(name);
 
             const openButton = document.createElement("button");
-            openButton.textContent = monster.name
+            openButton.textContent = monster.name;
+            openButton.setAttribute("class", "open-button")
             const dialog = document.createElement("dialog");
             const closeButton = document.createElement("button");
+            closeButton.setAttribute("class", "close-button")
             closeButton.textContent = "Close"
 
             openButton.addEventListener("click", () => {
@@ -80,6 +63,7 @@ fetchData(monstersUrl)
                     
 
                         dialog.appendChild(table);
+                        dialog.appendChild(closeButton);
 
                     }).catch(error => console.error(error));                
             })
@@ -88,30 +72,8 @@ fetchData(monstersUrl)
             })
 
             monsterTiles.appendChild(openButton);
-            dialog.appendChild(closeButton)
             monsterTiles.appendChild(dialog);
 
-
-            // monsterTiles.appendChild(section);
-            // fetchData(mainUrl + monster.url)
-                // .then(data => {
-                    
-
-                    
-
-
-
-                    // const image = document.createElement("img");image.src = `${mainUrl}/api/images/monsters/${monster.index}.png`; 
-                    // image.loading = "lazy";
-                    // image.alt = monster.name;
-                    // section.appendChild(image);
-
-                    // monsterTiles.appendChild(section);
-
-                // }).catch(error => console.error(error));
-
-
-            
         });
 
 

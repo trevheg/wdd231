@@ -137,7 +137,7 @@ dialog img {
     max-width: 100%;
 }
 
-button {
+.open-button, .close-button {
     width: 100%;
     background-color: var(--third-color);
     color: white;
