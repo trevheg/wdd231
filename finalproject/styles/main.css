@@ -95,6 +95,12 @@ main {
     display: grid;
     gap: 1rem;
     padding: 1rem;
+    
+}
+
+#spells {
+    display: grid;
+    gap: 1px;
 }
 
 section {
@@ -106,7 +112,7 @@ section {
 }
 
 section h3 {
-    background-color: var(--third-color);
+    background-color: var(--first-color);
     color: white;
     padding: .5rem;
 }
@@ -149,7 +155,12 @@ dialog td {
     font-size: larger;
     border-radius: 1rem;
     border: solid 2px var(--second-color);
+    
 
+}
+
+form {
+    display: grid;
 }
 
 footer {

@@ -12,4 +12,16 @@ async function fetchData(url) {
     }
 }
 
+export function addRow (table, q, a) {
+    const row = document.createElement("tr");
+    const first = document.createElement("td");
+    const second = document.createElement("td");                        
+    first.innerHTML = q;
+    second.innerHTML = a;
+    row.appendChild(first);
+    row.appendChild(second);
+    table.appendChild(row);
+}
+
+
 export {fetchData};

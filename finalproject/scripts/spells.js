@@ -1,7 +1,8 @@
-import { fetchData } from "./modules.mjs";
+import { fetchData, addRow } from "./modules.mjs";
 const equipmentDiv = document.querySelector("#spells");
 const mainUrl = "https://www.dnd5eapi.co";
 const spellsUrl = "https://www.dnd5eapi.co/api/2014/spells";
+
 
 
 fetchData(spellsUrl)
@@ -24,20 +25,11 @@ fetchData(spellsUrl)
                         dialog.innerHTML = '';
                         const table  = document.createElement("table");
  
-                        const addRow = (q, a) => {
-                            const row = document.createElement("tr");
-                            const first = document.createElement("td");
-                            const second = document.createElement("td");                        
-                            first.innerHTML = q;
-                            second.innerHTML = a;
-                            row.appendChild(first);
-                            row.appendChild(second);
-                            table.appendChild(row);
-                        }
 
-                        addRow("Name: ", spell.name);
-                        addRow('Description: ', spell.desc );
-                        addRow('Components: ', spell.components);
+
+                        addRow(table, "Name: ", spell.name);
+                        addRow(table, 'Description: ', spell.desc );
+                        addRow(table, 'Components: ', spell.components);
                         const spellLevel = () => {
                             if (spell.level == 0) {
                                 return "Cantrip";
@@ -45,7 +37,7 @@ fetchData(spellsUrl)
                                 return spell.level;
                             }
                         }
-                        addRow("Level: ", spellLevel());
+                        addRow(table, "Level: ", spellLevel());
                         const classes = () => {
                             let cs = '';
                             spell.classes.forEach(c => {
@@ -53,7 +45,7 @@ fetchData(spellsUrl)
                             });
                                 return cs;
                         }
-                        addRow("Classes: ", classes())
+                        addRow(table, "Classes: ", classes())
 
                         dialog.appendChild(table);
                         dialog.appendChild(closeButton);
