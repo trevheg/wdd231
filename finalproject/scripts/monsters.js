@@ -22,7 +22,7 @@ fetchData(monstersUrl)
 
             openButton.addEventListener("click", () => {
                 dialog.showModal();
-                console.log(mainUrl + monster.url)
+                // console.log(mainUrl + monster.url)
                 fetchData(mainUrl + monster.url)
                     .then(monster => {
  
@@ -67,9 +67,7 @@ fetchData(monstersUrl)
 
                     }).catch(error => console.error(error));                
             })
-            closeButton.addEventListener('click', () => {
-                dialog.close();
-            })
+            closeButton.addEventListener('click', () => dialog.close());
 
             monsterTiles.appendChild(openButton);
             monsterTiles.appendChild(dialog);

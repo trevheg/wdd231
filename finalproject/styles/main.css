@@ -137,6 +137,10 @@ dialog img {
     max-width: 100%;
 }
 
+dialog td {
+    align-content: start;
+}
+
 .open-button, .close-button {
     width: 100%;
     background-color: var(--third-color);
@@ -165,7 +169,12 @@ footer {
 
     }
 
-        #menu-button {
+    #menu-button {
         display: none;
+    }
+
+    #spells {
+        display: grid; 
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
