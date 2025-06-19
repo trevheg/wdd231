@@ -12,7 +12,7 @@ async function fetchData(url) {
     }
 }
 
-export function addRow (table, q, a) {
+function addRow (table, q, a) {
     const row = document.createElement("tr");
     const first = document.createElement("td");
     const second = document.createElement("td");                        
@@ -24,4 +24,4 @@ export function addRow (table, q, a) {
 }
 
 
-export {fetchData};
+export {fetchData, addRow};
