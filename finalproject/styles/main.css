@@ -109,11 +109,15 @@ section {
     overflow: hidden;
     text-align: center;
     object-fit: contain;
+}
+
+#monsters section {
     display: grid;
     grid-template-areas: 
     "h3"
     "picture"
     "p";
+
 }
 
 section h3 {
@@ -211,14 +215,14 @@ footer {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
 
-    section {
+    #monsters section {
         grid-template-areas: 
         "h3 h3"
         "picture p";
         grid-auto-rows: max-content;
     }
 
-    section p {
+    #monsters section p {
         font-size: x-large;
     }
 
