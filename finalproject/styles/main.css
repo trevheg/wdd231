@@ -161,6 +161,16 @@ dialog td {
 
 form {
     display: grid;
+    max-width: 400px;
+}
+
+label, #submit {
+    margin-top: 1rem;
+}
+
+input, select {
+    padding: .5rem;
+    border-radius: .5rem;
 }
 
 footer {
@@ -189,4 +199,6 @@ footer {
         display: grid; 
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+
+
 }

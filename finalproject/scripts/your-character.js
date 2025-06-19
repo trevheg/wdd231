@@ -2,7 +2,7 @@ import { fetchData, addRow } from "./modules.mjs";
 const nameSection = document.querySelector('#name');
 const raceSection = document.querySelector('#race');
 const classSection = document.querySelector('#class');
-const backgroundSection = document.querySelector('#background');
+
 const params = new URLSearchParams(window.location.search);
 const url = "https://www.dnd5eapi.co/api/2014/";
 const mainUrl = "https://www.dnd5eapi.co";
@@ -21,7 +21,7 @@ fetchData(`${url}races`)
     .then(data => {
         const raceIndex = params.get('race')
         const raceUrl = data.results.find(obj => obj.index === raceIndex).url;
-        fetchData(mainUrl + raceUrl)
+        fetchData(`${mainUrl}${raceUrl}`)
             .then(data => {
 
                 addThing("h3", data.name, raceSection);
@@ -37,13 +37,13 @@ fetchData(`${url}classes`)
     .then(data => {
         const classIndex = params.get('class')
         const classUrl = data.results.find(obj => obj.index === classIndex).url;
-        fetchData(mainUrl + raceUrl)
+        fetchData(`${mainUrl}${classUrl}`)
             .then(data => {
-
-                // addThing("h3", data.name, classSection);
-                // addThing("p", data.alignment, classSection);
-                // addThing("p", data.size_description, classSection);
-                // addThing("p", data.language_desc, classSection);
+                addThing("h3", `${data.subclasses[0].name} ${data.name}`, classSection);
+                fetchData(`${mainUrl}${data.subclasses[0].url}`)
+                    .then(data => {
+                        addThing("p", data.desc, classSection);
+                    })
 
             }).catch(error => console.error(error));
 
