@@ -11,7 +11,6 @@ async function fetchData() {
 const displayMonsters = (monsters) => {
     monsters.forEach(monster => {
         const card = document.createElement("section");
-        console.log(monster['large-image'])
 
         addThing("h3", monster.name, card);
         addThing("p", monster.description, card)
@@ -30,6 +29,7 @@ const displayMonsters = (monsters) => {
         const img = document.createElement("img");
         img.src = monster['large-image'];
         img.alt = monster.name;
+        img.loading = "lazy";
         image.appendChild(img)
 
         card.appendChild(image);

@@ -14,7 +14,6 @@
 }
 
 body {
-    /* padding: 1rem; */
     background-color: var(--first-color-light);
 }
 
@@ -110,12 +109,17 @@ section {
     overflow: hidden;
     text-align: center;
     object-fit: contain;
+    display: grid;
+    grid-template-areas: 
+    "h3"
+    "picture"
+    "p";
 }
 
 section h3 {
     background-color: var(--first-color);
     color: white;
-    padding: .5rem;
+    grid-area: h3;
 }
 
 section h3, section ul {
@@ -124,10 +128,15 @@ section h3, section ul {
 
 section p {
     padding: 1rem;
+    grid-area: p;
 }
 
 section li {
     margin: 1rem;
+}
+
+section picture {
+    grid-area: picture;
 }
 
 section img {
@@ -201,6 +210,27 @@ footer {
         display: grid; 
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
+
+    section {
+        grid-template-areas: 
+        "h3 h3"
+        "picture p";
+        grid-auto-rows: max-content;
+    }
+
+    section p {
+        font-size: x-large;
+    }
+
+
+
+    #monsters {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: .5rem;
+    }
+
+    
 
 
 }
