@@ -1,0 +1,70 @@
+{
+    "monsters": [
+        {
+            "name": "Giant Fire Beetle",
+            "description": "A giant fire beetle is a nocturnal creature that takes its name from a pair of glowing glands that give off light. Miners and adventurers prize these creatures, for a giant fire beetle's glands continue to shed light for 1d6 days after the beetle dies. Giant fire beetles are most commonly found underground and in dark forests.",
+            "large-image": "images/giant-fire-beetle-large.webp",
+            "small-image": "images/giant-fire-beetle-small.webp"
+        },
+        {
+            "name": "Kobold",
+            "description": "Kobolds are craven reptilian humanoids that commonly infest dungeons. They make up for their physical ineptitude with a cleverness for trap making.",
+            "large-image": "images/kobold-large.webp",
+            "small-image": "images/kobold-small.webp"
+        },
+        {
+            "name": "Goblin",
+            "description": "Goblins are small, black-hearted humanoids that lair in despoiled dungeons and other dismal settings. Individually weak, they gather in large numbers to torment other creatures.",
+            "large-image": "images/goblin-large.webp",
+            "small-image": "images/goblin-small.webp"
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        },
+        {
+            "name": "",
+            "description": "",
+            "large-image": "",
+            "small-image": ""
+        }
+    ]
+}

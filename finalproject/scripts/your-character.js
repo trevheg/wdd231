@@ -1,4 +1,4 @@
-import { fetchData, addRow } from "./modules.mjs";
+import { fetchData, addThing } from "./modules.mjs";
 const nameSection = document.querySelector('#name');
 const raceSection = document.querySelector('#race');
 const classSection = document.querySelector('#class');
@@ -7,12 +7,7 @@ const params = new URLSearchParams(window.location.search);
 const url = "https://www.dnd5eapi.co/api/2014/";
 const mainUrl = "https://www.dnd5eapi.co";
 
-// use this to add bits to the sections
-const addThing = (type, text, parent) => {
-    const thing = document.createElement(type);
-    thing.textContent = text;
-    parent.appendChild(thing);
-}
+
 
 const name = params.get('characterName');
 addThing("h3", name, nameSection);

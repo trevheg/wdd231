@@ -108,7 +108,8 @@ section {
     border: solid var(--second-color);
     border-radius: 1rem;
     overflow: hidden;
-    /* padding: 1rem; */
+    text-align: center;
+    object-fit: contain;
 }
 
 section h3 {
@@ -130,7 +131,8 @@ section li {
 }
 
 section img {
-    max-width: 100px;
+    max-width: 90%;
+    margin: 1rem;
 }
 
 dialog {

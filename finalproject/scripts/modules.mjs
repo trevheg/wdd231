@@ -23,5 +23,11 @@ function addRow (table, q, a) {
     table.appendChild(row);
 }
 
+const addThing = (type, text, parent) => {
+    const thing = document.createElement(type);
+    thing.textContent = text;
+    parent.appendChild(thing);
+}
 
-export {fetchData, addRow};
+
+export {fetchData, addRow, addThing};
